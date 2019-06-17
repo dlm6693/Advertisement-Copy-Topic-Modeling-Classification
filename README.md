@@ -11,6 +11,7 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 ## Obtaining the Data
 * Using Beautiful Soup, scraped about 146,000 pages for several different types of categorical and text data of advertisements including the actual copy(headline), industry, type of media, region and full description of the campaign.
 * Below is an example of a page and the locations of the information scraped
+
 <p align="center">
    <img src="Images/welovead.com_example.PNG" width="350">
 </p>
@@ -22,8 +23,6 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 * Additionally, several different pieces of creative were from the same campaign, and so there were a lot of duplicate values for text
     * After handling said null and duplicate values, data was reduced to about 38,000 rows and then 25,000 after it was decided to examine only headlines
 * Since the website was rather messy, so was the data, which required a lot of manual cleaning, including many values under the industry column being labeled with the name of a company instead and many regions that were supposed to labeled with just a country also contained a city
-
-
 
 ## Exploratory Analysis
 * Basic EDA showed that the U.S., Volkswagen, print media, and the Public Interest &amp; Non-Profit Sector dominated this data set as you can see in the charts below:
@@ -41,7 +40,9 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 * First experimented with clustering, but performance metrics were so poor (silhouette scores and elbow method), moved on to topic modeling, which is more ideal for text anyway
 * Used Latent Dirichlet Allocation (LDA) algorithms in both Gensim and SciKit Learn libarires, also trying Non-Negative Matrix Factorization, but ultimately settled on LDA from SKlearn with a total of 11 topics (down from 21 industries)
 * Unfortuantely these topics were pretty incoherent, which led me to the conclusion that the model simply was not fed enough text data to train properly as you can see below:
-![image-5](Images/topics.PNG)
+<p align="center">
+   <img src="Images/topics.PNG' width="100">
+</p>
 
 ## Predicting Topics
 * While it would be difficult to discern a practical use for these, I wanted to see if my original goal of predicting topics using copy was feasible, so I clustered the data and reduced dimensionality to 2 and 3 using principal component analysis and singular value decomposition
