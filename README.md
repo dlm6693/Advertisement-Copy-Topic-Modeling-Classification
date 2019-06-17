@@ -11,7 +11,7 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 ## Obtaining the Data
 * Using Beautiful Soup, scraped about 146,000 pages for several different types of categorical and text data of advertisements including the actual copy(headline), industry, type of media, region and full description of the campaign.
 * Below is an example of a page and the locations of the information scraped
-![image-1](Images/welovead.com_example.PNG)
+![image-1](Images/welovead.com_example.PNG=250x)
 * Stored all information in a NoSQL MongoDB
 
 ## Cleaning
@@ -22,9 +22,9 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 
 ## Exploratory Analysis
 * Basic EDA showed that the U.S., Volkswagen, print media, and the Public Interest &amp; Non-Profit Sector dominated this data set as you can see in the charts below:
-
 ![image-2](Images/ads_by_company_countplot.png)
 ![image-3](Images/ads_by_industry_countplot.png)
+
 * Most common words, included 'new,' 'world', 'life' and 'help', which makes sense because so many ads are advertising a new product and the most common industry is non-profit
 * Most common bigrams included 'don't let,' 'help us' and 'domestic violence' once again demonstrating the dominance of public interest/non-profit ads
 * Examined common words in descriptions as well, but it seemed to be too contextual about the campaigns to be interesting
