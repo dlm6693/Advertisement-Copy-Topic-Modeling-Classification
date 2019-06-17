@@ -11,7 +11,10 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 ## Obtaining the Data
 * Using Beautiful Soup, scraped about 146,000 pages for several different types of categorical and text data of advertisements including the actual copy(headline), industry, type of media, region and full description of the campaign.
 * Below is an example of a page and the locations of the information scraped
-![image-1](Images/welovead.com_example.PNG | width=250)
+<p align="center">
+   <img src="Images/welovead.com_example.PNG" width="350">
+</p>
+
 * Stored all information in a NoSQL MongoDB
 
 ## Cleaning
@@ -20,11 +23,12 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
     * After handling said null and duplicate values, data was reduced to about 38,000 rows and then 25,000 after it was decided to examine only headlines
 * Since the website was rather messy, so was the data, which required a lot of manual cleaning, including many values under the industry column being labeled with the name of a company instead and many regions that were supposed to labeled with just a country also contained a city
 
+
+
 ## Exploratory Analysis
 * Basic EDA showed that the U.S., Volkswagen, print media, and the Public Interest &amp; Non-Profit Sector dominated this data set as you can see in the charts below:
-![image-2](Images/ads_by_company_countplot.png)
-![image-3](Images/ads_by_industry_countplot.png)
-
+![image-2](/Images/ads_by_company_countplot.png)
+![image-3](/Images/ads_by_industry_countplot.png)
 * Most common words, included 'new,' 'world', 'life' and 'help', which makes sense because so many ads are advertising a new product and the most common industry is non-profit
 * Most common bigrams included 'don't let,' 'help us' and 'domestic violence' once again demonstrating the dominance of public interest/non-profit ads
 * Examined common words in descriptions as well, but it seemed to be too contextual about the campaigns to be interesting
