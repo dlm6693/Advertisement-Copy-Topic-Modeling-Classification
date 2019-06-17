@@ -11,7 +11,7 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 ## Obtaining the Data
 * Using Beautiful Soup, scraped about 146,000 pages for several different types of categorical and text data of advertisements including the actual copy(headline), industry, type of media, region and full description of the campaign.
 * Below is an example of a page and the locations of the information scraped
-![image-1](Images/welovead.com_example.PNG =250x)
+![image-1](Images/welovead.com_example.PNG | width=250)
 * Stored all information in a NoSQL MongoDB
 
 ## Cleaning
@@ -37,7 +37,7 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 * First experimented with clustering, but performance metrics were so poor (silhouette scores and elbow method), moved on to topic modeling, which is more ideal for text anyway
 * Used Latent Dirichlet Allocation (LDA) algorithms in both Gensim and SciKit Learn libarires, also trying Non-Negative Matrix Factorization, but ultimately settled on LDA from SKlearn with a total of 11 topics (down from 21 industries)
 * Unfortuantely these topics were pretty incoherent, which led me to the conclusion that the model simply was not fed enough text data to train properly as you can see below:
-![image-5](Images/topics.png)
+![image-5](Images/topics.PNG)
 
 ## Predicting Topics
 * While it would be difficult to discern a practical use for these, I wanted to see if my original goal of predicting topics using copy was feasible, so I clustered the data and reduced dimensionality to 2 and 3 using principal component analysis and singular value decomposition
