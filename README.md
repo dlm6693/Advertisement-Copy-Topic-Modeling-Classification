@@ -11,7 +11,7 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 ## Obtaining the Data
 * Using Beautiful Soup, scraped about 146,000 pages for several different types of categorical and text data of advertisements including the actual copy(headline), industry, type of media, region and full description of the campaign.
 * Below is an example of a page and the locations of the information scraped
-![image-1](Images/welovead.com_example.png)
+![image-1](Images/welovead.com_example.PNG)
 * Stored all information in a NoSQL MongoDB
 
 ## Cleaning
