@@ -41,7 +41,7 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 * Used Latent Dirichlet Allocation (LDA) algorithms in both Gensim and SciKit Learn libarires, also trying Non-Negative Matrix Factorization, but ultimately settled on LDA from SKlearn with a total of 11 topics (down from 21 industries)
 * Unfortuantely these topics were pretty incoherent, which led me to the conclusion that the model simply was not fed enough text data to train properly as you can see below:
 <p align="center">
-   <img src="Images/topics.PNG' width="100">
+   <img src="Images/topics.PNG" width="600">
 </p>
 
 ## Predicting Topics
@@ -54,7 +54,9 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 * Experimented with Support Vector Machines, Random Forest and XG Boost classifier algorithms, and while XG approached MNB after tuning, it still ultimately performed worse, getting a higher accuracy on training (96.6%) and lower on test (70.2%)
 * MNB was also very consistent across every class (topic) as well as the other evaluation metrics, scoring right around 0.75 in precision, recall and therefore F1, which you can see below in the confusion matrix and classification report
 ![image-10](Images/mnb_confusion_matrix.png)
-![image-11](Images/mnb_class_report.png)
+<p align="center">
+   <img src="Images/mnb_class_report.png" width="750">
+</p>
 
 ## Next Steps
 * Naturally topic modelling is meaningless if said topics don't make any sense! So trying to account is essential
