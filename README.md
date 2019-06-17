@@ -22,6 +22,7 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 
 ## Exploratory Analysis
 * Basic EDA showed that the U.S., Volkswagen, print media, and the Public Interest &amp; Non-Profit Sector dominated this data set as you can see in the charts below:
+
 ![image-2](Images/ads_by_company_countplot.png)
 ![image-3](Images/ads_by_industry_countplot.png)
 * Most common words, included 'new,' 'world', 'life' and 'help', which makes sense because so many ads are advertising a new product and the most common industry is non-profit
