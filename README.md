@@ -1,5 +1,5 @@
 # Advertisement Topic Modeling & Classifcation
-Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
+Creating topics from copy of advertisements, then attempting to predict said topics.
 
 ## Summary
 * Scraped approximately 146,000 advertisements from [welovead.com](welovead.com) and stored in MongoDB
