@@ -1,8 +1,8 @@
-# DS-Final-Project
+# Advertisement Topic Modeling & Classifcation
 Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 
 ## Summary
-* Scraped approximately 146,000 advertisements from welovead.com[welovead.com] and stored in MongoDB
+* Scraped approximately 146,000 advertisements from [welovead.com](welovead.com) and stored in MongoDB
 * Initially planned to predict industry of an ad, but through EDA discovered that there was a lot of overlap so new topics would need to be created
 * Despite a lot of tinkering and playing with Latent Dirichlet Allocation and Non-Negative Matrix Factorization algorithms, was only able to yield topics that were relatively incoherent and hard to understand, concluding that they simply did not have enough text data to train on
 * After settling on an LDA model that yielded 11 topics that still were not very discernible, visualizations of principal component analysis and singular value decomposition demonstrated that there were distinct clusters, so creating a model on which to predict seemed possible
@@ -61,6 +61,6 @@ Predicting Topic of An Advertisement Based on Copy &amp; Deep Dive Analysis
 </p>
 
 ## Next Steps
-* Naturally topic modelling is meaningless if said topics don't make any sense! So trying to account is essential
-* More text data is needed for this, so I plan to use LDA on descriptions since there was so much more in there
+* Naturally topic modelling is meaningless if said topics don't make any sense! So trying to account for this is absolutely essential
+* More text data is needed, so I plan to use LDA on descriptions since there was so much more text to train on in there
 * Another option would to be gather more ad copy data, but since I scraped my initial source for everything it had, I would need to find another one, which might be impossible without paying for it
