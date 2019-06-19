@@ -1,6 +1,19 @@
 # Advertisement Topic Modeling & Classifcation
 Creating topics from copy of advertisements, then attempting to predict said topics.
 
+## Why Ads?
+* Wanted to focus on a topic that was relevant to a domain I have experience in, but also be creative and different!
+* Most marketing data science projects involve performance data, but in lieu of that I thought analyzing ad copy seemed fun and unique.
+
+## Table of Contents
+1. [Summary](#summary)
+2. [Obtaining the Data](#obtaining-the-data)
+3. [Cleaning](#cleaning)
+4. [Exploratory Analysis](#exploratory-analysis)
+5. [Topic Modeling](#topic-modeling)
+6. [Predicting Topics](#predicting-topics)
+7. [Next Steps](#next-steps)
+
 ## Summary
 * Scraped approximately 146,000 advertisements from [welovead.com](welovead.com) and stored in MongoDB
 * Initially planned to predict industry of an ad, but through EDA discovered that there was a lot of overlap so new topics would need to be created
@@ -64,3 +77,5 @@ Creating topics from copy of advertisements, then attempting to predict said top
 * Naturally topic modelling is meaningless if said topics don't make any sense! So trying to account for this is absolutely essential
 * More text data is needed, so I plan to use LDA on descriptions since there was so much more text to train on in there
 * Another option would to be gather more ad copy data, but since I scraped my initial source for everything it had, I would need to find another one, which might be impossible without paying for it
+* Experimenting more with non-negative matrix factorization - was unable to automatically tune using randomized search
+* Look into biterm topic modeling and other methods that are more ideal for processing shorter documents
