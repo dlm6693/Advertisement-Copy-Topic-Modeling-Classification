@@ -1,4 +1,4 @@
-# Advertisement Topic Modeling & Classifcation
+# Advertisement Topic Modeling & Classification
 Creating topics from copy of advertisements, then attempting to predict said topics.
 
 ## Why Ads?
